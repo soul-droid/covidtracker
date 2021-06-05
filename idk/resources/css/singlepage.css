@@ -1,0 +1,19 @@
+table {
+  table-layout: auto;
+  width: 100%;
+}
+a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #006d77;
+  transition: font-size 1s;
+}
+a:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #0096c7;
+  font-size: 66px;
+}
+body {
+  background-image: linear-gradient(rgba(14, 13, 13, 0.651), rgba(0, 0, 0, 0.9)),
+    url("../img/hero-bg.jpg");
+  background-size: cover;
+}

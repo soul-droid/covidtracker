@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./resources/css/style.css" />
+
+    <title>COVID-19 STATS - JAVASCRIPT</title>
+  </head>
+  <body>
+    <header class="header show-on-scroll">
+      <div class="logo">
+        <img src="./resources/img/logo.png" alt="" />
+        <p >COVID-19<br />  STATS</p>
+      </div>
+      <nav id="menu">
+          <a href="index.html">Home</a>
+          <a href="prevention.html">Prevention</a>
+          <a href="symptoms.html">Symptoms</a>
+          <a href="treatment.html">Treatment</a>
+          <a href="news.html">News</a>
+          <a href="impact.html">Impact</a>
+      </nav>
+      <link rel="stylesheet" href="./resources/css/style.css" />
+
+    </header>
+    <main>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                <img class="close" src="./resources/img/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+      <div class="Prevention">
+        <a href="">Prevention</a>
+        <img src="./resources/img/3.jpeg" alt="prevention image" class="prevention_image show-on-scroll">
+      </div>
+      <div id="Symptoms">
+        <h2>Symptoms</h2>
+      </div>
+      <div>
+        Treatment
+      </div>
+      <div>
+        News
+      </div>
+      <div>
+        Impact
+        <h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+          unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+          /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+            ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+        
+          </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+            unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+            /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+              ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+          
+            </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+              unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+              /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+            
+              </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                  ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+              
+                </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                  unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                  /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                    ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                
+                  </p></h1>Impact
+                  <h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                    unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                    /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                      ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                  
+                    </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                      unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                      /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                        ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                    
+                      </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                        unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                        /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                          ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                      
+                        </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                          unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                          /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                            ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                        
+                          </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                            unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                            /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                              ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                          
+                            </p></h1>Impact
+                            <h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                              unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                              /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                            
+                              </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                  ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                              
+                                </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                  unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                  /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                    ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                                
+                                  </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                    unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                    /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                      ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                                  
+                                    </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                      unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                      /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                        ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                                    
+                                      </p></h1>Impact
+                                      <h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                        unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                        /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                          ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                                      
+                                        </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                          unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                          /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                            ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                                        
+                                          </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                            unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                            /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                              ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                                          
+                                            </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                              unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                              /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                                ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                                            
+                                              </p></h1><h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla repellendus ex explicabo 
+                                                unde sapiente! Laboriosam exercitationem, ut omnis voluptates rem laudantium debitis ipsa 
+                                                /illum quos numquam expedita perspiciatis, quae autem.</div></p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis error saepe inventore accusantium quidem, ut m
+                                                  ollitia consectetur vitae nemo, nam assumenda fugit magnam aperiam nisi id dolorem suscipit ipsa.
+                                              
+                                                </p></h1>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="copyright">
+          <p>Copyright © 2021 Soul Covid Tracker</p>
+        </div>
+      </div>
+    </footer>
+    <script src="resources/js/show-on-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous">
+    </script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <script src="resources/js/countries.js"></script>
+    <script src="resources/js/app.js"></script>
+
+
+  </body>
+</html>
