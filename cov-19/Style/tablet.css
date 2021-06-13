@@ -1,0 +1,406 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 500px) {
+
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .body {
+        overflow: hidden;
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden;
+        scrollbar-width: none;
+    }
+    body::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+      }
+    .container {
+        overflow: hidden;
+        background-color: black;
+        padding: 5px; /* Large padding which will shrink on scroll (using JS) */
+        transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+        position: fixed; /* Sticky/fixed navbar */
+        width: 100%;
+       height: 0;
+        top: 0; /* At the top */
+        z-index: 99;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        overflow: hidden;
+        
+      }
+    
+      .container .logo a{
+       
+  visibility: hidden;
+      }
+   
+    
+     
+    
+      .container .navbar ul {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        position: fixed;
+        left: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background: #ffffff;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        -webkit-transition: left .3s;
+        -o-transition: left .3s;
+        transition: left .3s;
+      }
+    
+      .container .navbar ul li a {
+        padding: 10px;
+        font-size: 16px;
+        height: auto;
+        line-height: normal;
+        color: #555555;
+      }
+    
+      .container .navbar ul .close {
+        display: block;
+        
+      }
+      .container .navbar ul .close span {
+        font-size: 30px;
+        display: inline-block;
+        border: 1px solid #cccccc;
+        padding: 0 10px;
+        cursor: pointer;
+       position: relative;
+       top: 450px;
+       left: 0px;
+      }
+    
+      .container .navbar .icon-bar {
+          z-index: 99;
+       position:fixed;
+       
+       bottom: 30px;
+      right: 5px;
+       height: 10px;
+       width: 20px;
+      margin-right: 10px;
+       
+      
+      }
+    
+      .container .navbar ._Menus-show {
+        left: 60%;
+      }
+    
+   
+    
+    
+    
+    
+    
+   
+    
+    
+    
+      .About{
+     
+        position: relative;
+        bottom: 50px;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../Image/pexels-yaroslav-danylchenko-4113084\ \(1\).jpg);
+        border-radius: 0;
+       
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+       
+    }
+    #about{
+        height: 1px;
+        padding-top: 0%;
+        
+    }
+    #prevention{
+       height: 1px;
+       padding-top: 0%;
+       
+    }
+    #diagnose{
+       height: 1px;
+       padding-top: 0%;
+       
+    }
+    #treatment{
+       height: 1px;
+       padding-top: 0%;
+       
+    }
+    #symptoms{
+       height: 1px;
+       padding-top: 0%;
+       
+    }
+     
+    .heading{
+       font-family: 'Ultra', serif;
+       margin: 1em 0 0.5em 0;
+       color: #e63946;
+       font-weight: normal;
+   
+     font-size: 30px;
+       line-height: 42px;
+       text-transform: uppercase;
+       text-shadow: 0 2px white, 0 3px #777;
+       text-align: center;
+    }
+    .content p{
+       font-family: 'Noto Sans JP', sans-serif;
+       font-size: 20px;
+       color: #f1faee;
+       display: flex;
+     justify-content: center;
+    }
+   
+    .inline-photo1 {
+        align-items: center;
+       border: 2px solid #fff;
+       
+       border-radius: .25em;
+       box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+       margin: 2em auto;
+       margin-left: 35px;
+       opacity: 0;
+       transform: translateY(9em) rotateZ(-5deg);
+       transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                   opacity .3s .25s ease-out;
+       max-width: 600px;
+       width: 90%;
+       
+       will-change: transform, opacity;
+     }
+     
+     .inline-photo1.is-visible {
+       opacity: 1;
+       transform: rotateZ(0deg);
+     }
+     .content h3{
+       font-family: 'Padauk', sans-serif;
+       font-size: 25px;
+       color: #06d6a0;
+      
+    }
+    .content ul{
+       font-family: 'Padauk', sans-serif;
+       font-size: 20px;
+       color: #0a9396;
+       list-style-type: circle;
+     
+    }
+    .readmore a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .content .readmore{
+        width: 300px;
+       color: #fff !important;
+       text-transform: uppercase;
+       text-decoration: none;
+       background: #ed3330;
+       padding: 20px;
+       margin-bottom: 10px;
+       border-radius: 15px 50px 30px;
+       display: inline-block;
+       border: none;
+       align-items: center;
+    }
+     }
+   
+    .Prevention{
+        
+       position: relative;
+       bottom: 5px;
+       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../Image/pexels-cottonbro-3957994.jpg);
+       border-radius: 0;
+      
+       background-repeat: repeat-y;
+       background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      
+    }
+   
+   
+      .Symptoms{
+        
+       position: relative;
+       bottom: 5px;
+       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../Image/symptoms.jpg);
+       border-radius: 0;
+      
+       background-repeat: repeat-y;
+       background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      
+    }
+    .diagnose{
+        
+       position: relative;
+       bottom: 5px;
+       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../Image/diagnose.jpg);
+       border-radius: 0;
+      
+       background-repeat: repeat-y;
+       background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      
+    }
+    .treatment{
+        
+       position: relative;
+       bottom: 5px;
+       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../Image/pexels-thirdman-5862313.jpg);
+       border-radius: 0;
+      
+       background-repeat: repeat-y;
+       background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      
+   }
+    
+    
+    
+
+   .vaccine {
+    background-color: #06d6a0;
+    color: white;
+    padding: 1em 5.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+   
+  }
+  
+  .vaccine :hover {
+    background-color: #555;
+  }
+  
+  .vaccine :active {
+    background-color: black;
+  }
+  
+  .vaccine :visited {
+    background-color: #ccc;
+  }
+  footer{
+    background-color: #009688;
+    height: 100px;
+  }
+
+
+
+  .stats{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,url('../Image/pexels-khairi-harry-4007642.jpg');
+    background-size: cover;
+}
+
+
+
+
+/* -------- LATEST REPORT -------- */
+.latest-report{
+    display: flex; 
+flex-direction: column; 
+width: 80%;
+margin: 0 auto;
+padding-top: 50px;
+padding-left: 10px;
+
+color: #FFF;
+
+
+  
+}
+
+
+.country h1{
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    right: 50px;
+    overflow: hidden;
+    bottom:0px;
+}
+.name{
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    right: 50px;
+    overflow: hidden;
+    font-size: 30px;
+    color: #be64f1;
+    font-weight: bold;
+}
+
+
+
+.title{
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    right: 70px;
+    overflow: hidden;
+    font-size: 1.3em;
+    position: relative;
+    right: 70px;
+    overflow: hidden;
+}
+.total-cases .value{
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+}
+.recovered .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #009688;
+}
+.deaths .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #f44336;
+}
+.new-value{
+    font-size: 1.3em;
+}
+/* -------- CHART -------- */
+.chart{
+    width: 80%;
+    height: 70vh;
+    min-height: 500px;
+
+    margin: 0 auto;
+    padding: 50px 0;
+}
